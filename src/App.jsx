@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import CategorySection from "./components/CategorySection";
 import ProductSection from "./components/ProductSection";
@@ -8,13 +8,21 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Header />
+      <Navbar />
       <main>
-        <Hero />
-        <CategorySection />
-        <ProductSection />
+        <div id="nav-home">
+          <Hero />
+        </div>
+        <div id="nav-categories">
+          <CategorySection />
+        </div>
+        <div id="nav-products">
+          <ProductSection />
+        </div>
       </main>
-      <Footer />
+      <div id="nav-contact">
+        <Footer />
+      </div>
     </>
   );
 }
