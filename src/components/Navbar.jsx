@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Navbar.css";
-
-// id khớp với các khu vực được bọc trong App.jsx
+// Đã xóa import "./Navbar.css"; vì CSS đã nằm trong App.css
 const NAV_LINKS = [
   { id: "nav-home", label: "Trang chủ" },
   { id: "nav-categories", label: "Danh mục" },
